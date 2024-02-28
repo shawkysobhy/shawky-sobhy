@@ -9,10 +9,10 @@ function Contact() {
 	return (
 		<section id={NAVBAR.Contact} ref={ref} className='section-wrapper mb-0'>
 			<div className='flex items-center flex-col'>
-				<p className='text-center font-black text-2xl'>
+				<p className='text-center font-black text-xl md:text-2xl'>
 					Contact <span className='text-brand'>.</span>{' '}
 				</p>
-				<p className='text-center my-[2.5rem] font-extralight text-brightWhite max-w-[700px]'>
+				<p className='text-center my-[2.5rem] leading-relaxed	 font-extralight text-brightWhite max-w-[700px]'>
 					Shoot me an email if you want to connect! You can also find me on
 					<a
 						className='text-brand'
@@ -29,7 +29,7 @@ function Contact() {
 					</a>
 					if that &apos;s more your speed.
 				</p>
-				<div className='flex items-center font-bold  gap-4 text-md'>
+				<div className='flex items-center font-bold  gap-4 text-sm md:text-md'>
 					<IoMdMailOpen /> shawkysobhy98@gmail.com
 				</div>
 			</div>
