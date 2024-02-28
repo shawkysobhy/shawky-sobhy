@@ -1,11 +1,11 @@
 import WaterDropGrid from '../components/AnmiGrid';
-import { NAME, POSITION, BIO } from '../data/data';
+import { NAME, POSITION, BIO } from '../data/constant';
 function Heading() {
 	return (
-		<section className='mb-[9.6rem] relative z-10 max-w-[1152px]	p-[9.6rem] m-auto overflow-hidden'>
+		<section className='section-wrapper '>
 			<div className='relative z-10 w-fit my-[4.8rem] mx-0'>
 				<div className='relative w-fit overflow-hidden text-white'>
-					<h1 className='text-2xl font-black'>
+					<h1 className='text-xl md:text-2xl font-black'>
 						{NAME}
 						<span className='text-brand'> . </span>
 					</h1>

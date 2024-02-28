@@ -10,7 +10,6 @@ export default {
 			xl: '5.6rem', // 20px
 			'2xl': '9.6rem',
 		},
-
 		extend: {
 			colors: {
 				background: '#111',
@@ -20,6 +19,10 @@ export default {
 				backgroundDark: '#080808',
 				white: '#ebecf3',
 				icon: '#717175',
+				brightWhite: '#fff',
+			},
+			screens: {
+				md900: '900px',
 			},
 		},
 	},

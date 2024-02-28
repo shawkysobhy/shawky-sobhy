@@ -1,14 +1,16 @@
 import { HiMiniCommandLine } from 'react-icons/hi2';
 import { FaArrowRightLong } from 'react-icons/fa6';
-import { SectionTitle,Chips, Social } from '../components';
-import { tools } from '../data/data';
+import { SectionTitle, Chips, Social } from '../components';
+import { tools, NAVBAR } from '../data/constant';
+import useElementVisibility from '../hooks/useElementVisibility';
 function About() {
+	const { ref } = useElementVisibility(NAVBAR.About);
 	return (
-		<section id='About' className='mb-[9.6rem] relative z-10 max-w-[1152px]	p-[9.6rem] m-auto overflow-hidden text-white'>
-      <SectionTitle direction={'row'} title={'About'}/>
-			<div className='grid  grid-cols-[minmax(0,1fr)_300px] gap-[3rem]'>
+		<section ref={ref} id='About' className='section-wrapper'>
+			<SectionTitle direction={'row'} title={'About'} />
+			<div className='grid grid-cols-1 md900:grid-cols-[minmax(0,1fr)_300px] gap-[3rem]'>
 				<div>
-					<p className='font-extralight leading-loose mb-[2.4rem]'>
+					<p className='about font-extralight leading-loose mb-[2.4rem]'>
 						Hey, I&apos;m Shawky Sobhy. I&apos;m passionate about web and
 						frontend development and love building web applications. I graduated
 						with a degree in Computer Science in 2023. I have experience
@@ -20,7 +22,7 @@ function About() {
 						<p className='text-brand font-bold flex flex-row items-center gap-4'>
 							My Links <FaArrowRightLong />
 						</p>
-						<Social/>
+						<Social />
 					</div>
 				</div>
 				<div>
@@ -31,7 +33,9 @@ function About() {
 						</div>
 					</div>
 					<div className='flex flex-wrap mb-[4.8rem] gap-[1.2rem]'>
-            {tools.map(tool=><Chips key={tool}>{tool}</Chips>)}
+						{tools.map((tool) => (
+							<Chips key={tool}>{tool}</Chips>
+						))}
 					</div>
 				</div>
 			</div>

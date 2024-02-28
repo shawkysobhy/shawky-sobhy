@@ -1,5 +1,4 @@
 import anime from 'animejs';
-
 const WaterDropGrid = () => {
 	return (
 		<div className='absolute right-0 top-0 grid place-content-center  px-8 py-12 max-w-[80%] z-0 '>
