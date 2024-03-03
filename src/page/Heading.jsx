@@ -17,9 +17,11 @@ function Heading() {
 					<p className='my-[2.4rem] mx-0 max-w-[700px] font-extralight'>
 						{BIO}
 					</p>
-					<button className='bg-brand rounded-md text-background py-[1rem] px-[2.4rem] transition-opacity duration-200 hover:opacity-70 text-sm'>
+					<a
+						href='#contact'
+						className=' inline-block z-20 bg-brand rounded-md text-background py-[1rem] px-[2.4rem] transition-opacity duration-200 hover:opacity-70 text-sm'>
 						Contact Me
-					</button>
+					</a>
 				</div>
 			</div>
 			<WaterDropGrid />

@@ -19,6 +19,7 @@ function ProjectCard({ project }) {
 		<div>
 			<div className='bg-backgroundLight cursor-pointer rounded-[.8rem] overflow-hidden aspect-video relative	'>
 				<img
+				onClick={openModalHandler}
 					className='w-4/5  absolute overflow-hidden bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-2/5 '
 					src={project.img}
 				/>
@@ -34,7 +35,7 @@ function ProjectCard({ project }) {
 						<BsBrowserChrome className='icon' />
 					</a>
 				</div>
-				<div className='text-brand '>{project.tools.join(' - ')}</div>
+				<div className='text-brand '>{project?.tools?.join(' - ')}</div>
 				<p className='leading-relaxed my-2 font-extralight'>
 					{project.description.substring(0, 113)}
 					<button

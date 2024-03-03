@@ -1,14 +1,11 @@
-import { NAVBAR } from '../data/constant';
-import useElementVisibility from '../hooks/useElementVisibility';
 import { CERTIFICATES } from '../data/constant';
 import CertificateItem from '../components/CertificateItem';
 import { SectionTitle } from '../components';
 function Certificate() {
-	const { ref } = useElementVisibility(NAVBAR.Certificate);
 
 	return (
-		<section ref={ref} id={NAVBAR.Certificate} className='section-wrapper'>
-			<SectionTitle title='Certificate' direction='row'  fontsize="text-lg"/>
+		<section data-section id='certificate' className='section-wrapper' >
+			<SectionTitle title='Certificate' direction='row' fontsize='text-lg' />
 			<ul>
 				{CERTIFICATES.map((item) => (
 					<CertificateItem

@@ -1,12 +1,10 @@
 import { HiMiniCommandLine } from 'react-icons/hi2';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { SectionTitle, Chips, Social } from '../components';
-import { tools, NAVBAR } from '../data/constant';
-import useElementVisibility from '../hooks/useElementVisibility';
+import { tools } from '../data/constant';
 function About() {
-	const { ref } = useElementVisibility(NAVBAR.About);
 	return (
-		<section ref={ref} id='About' className='section-wrapper'>
+		<section  className='section-wrapper' data-section id='about' >
 			<SectionTitle direction={'row'} title={'About'} />
 			<div className='grid grid-cols-1 md900:grid-cols-[minmax(0,1fr)_300px] gap-[3rem]'>
 				<div>
