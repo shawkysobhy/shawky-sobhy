@@ -1,5 +1,4 @@
 import NavItem from './NavItem';
-import { NAVBAR } from '../data/constant';
 import { useState, useRef, useEffect } from 'react';
 function Aside() {
 	const [activeSection, setActiveSection] = useState(null);
@@ -14,7 +13,6 @@ function Aside() {
 					setActiveSection(visibleSection.id);
 				}
 			},
-			{ threshold: 0.4 }
 		);
 		const sections = document.querySelectorAll('[data-section]');
 		sections.forEach((section) => {
@@ -26,32 +24,35 @@ function Aside() {
 			});
 		};
 	}, []);
+	console.log(activeSection);
 
 	return (
 		<nav className='bg-backgroundDark sticky top-0 left-0 z-14 flex flex-col items-center overflow-y-auto h-screen '>
-			<a href='/' className='w-[45px] h-[45px] flex items-center justify-center bg-background rounded my-[1.8rem] mx-0 text-white font-black text-[2.2rem] cursor-pointer'>
+			<a
+				href='/'
+				className='w-[45px] h-[45px] flex items-center justify-center bg-background rounded my-[1.8rem] mx-0 text-white font-black text-[2.2rem] cursor-pointer'>
 				S <span className='text-brand'>.</span>
 			</a>
 			<NavItem
-				to={NAVBAR.About}
+				to="about"
 				title={'About'}
 				activeSection={activeSection}
 				setActiveSection={setActiveSection}
 			/>
 			<NavItem
-				to={NAVBAR.Projects}
+				to='projects'
 				title={'Projects'}
 				activeSection={activeSection}
 				setActiveSection={setActiveSection}
 			/>
 			<NavItem
-				to={NAVBAR.Certificate}
+				to='certificate'
 				title={'Certificate'}
 				activeSection={activeSection}
 				setActiveSection={setActiveSection}
 			/>
 			<NavItem
-				to={NAVBAR.Contact}
+				to='contact'
 				title={'Contact'}
 				activeSection={activeSection}
 				setActiveSection={activeSection}

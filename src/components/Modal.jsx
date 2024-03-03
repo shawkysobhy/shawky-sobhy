@@ -10,7 +10,7 @@ function Modal({ onClose, children }) {
 	return createPortal(
 		<div
 			onClick={handleOverlayClick}
-			className='fixed  top-0 left-0 bottom-0 right-0 h-screen overflow-y-auto  backdrop-blur-sm	bg-bgOpaque  flex justify-center z-[400] py-[4.8rem] px-[1.2rem] 
+			className='fixed  top-0 left-0 bottom-0 right-0 h-screen overflow-y-auto  backdrop-blur-sm	bg-bgOpaque  flex justify-center z-[400] py-[4.8rem] px-[1.2rem] items-start
     '>
 			<div className='modal contant'>
 				<button
