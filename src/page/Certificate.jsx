@@ -8,7 +8,7 @@ function Certificate() {
 
 	return (
 		<section ref={ref} id={NAVBAR.Certificate} className='section-wrapper'>
-			<SectionTitle title='Certificate' />
+			<SectionTitle title='Certificate' direction='row'  fontsize="text-lg"/>
 			<ul>
 				{CERTIFICATES.map((item) => (
 					<CertificateItem
