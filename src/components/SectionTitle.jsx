@@ -8,7 +8,7 @@ function SectionTitle({ direction, title, fontsize }) {
 					? 'flex-row-reverse'
 					: 'row'
 			}   gap-[2.2rem] `}>
-			<h3 className={`${fontsize ? fontsize : 'text-xl'} font-black`}>
+			<h3 className={`${fontsize ? fontsize : 'text-xl'} font-black `}>
 				{title}
 				<span className='text-brand'>.</span>
 			</h3>

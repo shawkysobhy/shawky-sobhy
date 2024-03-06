@@ -18,6 +18,11 @@ export const tools = [
 	'Figma',
 ];
 
+export const Note_Project = `" each task and small project I've tackled represents a step forward in
+					my journey of growth and development. They're like little milestones,
+					marking my progress and sparking my passion for learning.  they may not
+					be perfect, but they sure are filled with heart and determination. "`;
+
 export const NAVBAR = {
 	About: 'About',
 	Projects: 'Projects',

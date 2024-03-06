@@ -11,6 +11,9 @@ export default {
 			'2xl': '9.6rem',
 		},
 		extend: {
+			fontFamily: {
+				note: ['Mali', 'cursive'],
+			},
 			colors: {
 				background: '#111',
 				brand: '#0aff9d',
@@ -20,9 +23,12 @@ export default {
 				white: '#ebecf3',
 				icon: '#717175',
 				brightWhite: '#fff',
+				textGray: '#9fa2a7',
+				darkGray: '#26272b',
 			},
 			screens: {
 				md900: '900px',
+				mdSmall: '550px',
 			},
 		},
 	},

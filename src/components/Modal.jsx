@@ -3,7 +3,7 @@ import { IoCloseOutline } from 'react-icons/io5';
 function Modal({ onClose, children }) {
 	const handleOverlayClick = (e) => {
 		if (e.target === e.currentTarget) {
-			onClose(); 
+			onClose();
 		}
 	};
 

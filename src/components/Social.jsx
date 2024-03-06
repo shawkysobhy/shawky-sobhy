@@ -15,7 +15,7 @@ function Social() {
 			<a className='iconContainer' target='_blank' href={`mailto:${CONTACTS.email}`}>
 				<IoMail className='icon' />
 			</a>
-			<a className='iconContainer' href='#Contact'>
+			<a className='iconContainer' href='#contact'>
 				<IoCallSharp className='icon' />
 			</a>
 		</div>

@@ -1,15 +1,20 @@
 import { CONTACTS } from '../data/contact';
 import Social from './Social';
+import { FaGoogleDrive } from 'react-icons/fa';
+
 function Header() {
 	return (
-		<header className='h-[81px] px-[1rem] sm:px-[3.6rem] flex items-center justify-between sticky top-0 z-20 bg-bgOpaque  text-md backdrop-blur-md	'>
+		<header className='h-[81px] px-[1rem] sm:px-[3.6rem] flex items-center justify-between sticky top-0 z-20 bg-bgOpaque  text-md backdrop-blur-md'>
 			<Social />
-			<a
-				href={CONTACTS.ruesme}
-				target='_blank'
-				className='outline-none cursor-pointer border-solid text-brand border-brand border-[1px] rounded-md z-20 overflow-hidden transition-colors duration-200  bg-transparent hover:text-backgroundDark hover:bg-brand text-[18px] p-[1rem] sm:px-[2.3rem] sm:py-[1.2rem]'>
-				My resume
+			<a href={CONTACTS.ruesme} target='_blank' className='z-20 styled-link'>
+				<span>My resume</span> <FaGoogleDrive />
 			</a>
+			{/* <Link
+				to='/projects'
+				className='  max-w-[200px] flex items-center justify-center w-3/5 px-2 py-4 space-x-4  bg-backgroundLight border border-brand  hover:opacity-70'>
+				<span className='font-medium '>See More</span>
+				<MdLastPage />
+			</Link> */}
 		</header>
 	);
 }

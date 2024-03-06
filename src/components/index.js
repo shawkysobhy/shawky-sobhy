@@ -5,5 +5,6 @@ import SectionTitle from './SectionTitle';
 import Chips from './Chips';
 import Social from './Social';
 import Modal from './Modal';
+import ProjectCard from './ProjectCard';
 import ProjectInfo from './ProjectInfo';
-export {  Aside, NavItem, Header ,SectionTitle,Chips,Social,ProjectInfo ,Modal};
+export {  Aside, NavItem, Header ,SectionTitle,Chips,Social,ProjectInfo ,Modal ,ProjectCard};
