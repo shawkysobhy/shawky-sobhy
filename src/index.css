@@ -21,8 +21,8 @@ body {
 	.section-wrapper {
 		@apply mb-[4.8rem] py-[7.2rem] px-[2.4rem] relative z-10 max-w-[1152px]	md:p-[9.6rem] md:mb-[9.6rem] m-auto overflow-hidden text-white;
 	}
-	.styled-link{
-		@apply px-8 py-4  text-[16px] font-bold text-white transition-colors duration-200 border outline-none cursor-pointer bg-[#1b4332] border-brand hover:bg-backgroundLight flex items-center justify-center space-x-4
+	.styled-link {
+		@apply px-8 py-4  text-[16px] font-bold text-white transition-colors duration-200 border outline-none cursor-pointer bg-[#1b4332] border-brand hover:bg-backgroundLight flex items-center justify-center space-x-4;
 	}
 }
 .iconContainer {
@@ -65,88 +65,13 @@ body {
 	color: #111;
 }
 
-.notfound-icon {
-	width: 200px;
-	color: #0aff9d;
-	height: 200px;
+
+.filter::-webkit-scrollbar {
+	height: 5px;
+	background-color: #f0f0f0; /* Set the background color of the scrollbar track */
 }
 
-.glow-on-hover {
-	outline: none;
-	cursor: pointer;
-	position: relative;
-	z-index: 0;
-	border-radius: 5px;
+/* Style for the scrollbar thumb (the draggable part) */
+.filter::-webkit-scrollbar-thumb {
+	background-color: #888; /* Set the color of the scrollbar thumb */
 }
-
-.glow-on-hover:before {
-	content: '';
-	background: linear-gradient(45deg, #fff, #0aff9d, #232323);
-	position: absolute;
-	top: -2px;
-	left: -2px;
-	background-size: 400%;
-	z-index: -1;
-	filter: blur(5px);
-	width: calc(100%);
-	height: calc(100%);
-	animation: glowing 20s linear infinite;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	border-radius: 5px;
-}
-
-.glow-on-hover:active:after {
-	background: transparent;
-}
-
-.glow-on-hover:before {
-	opacity: 1;
-}
-
-.glow-on-hover:after {
-	z-index: -1;
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: #111;
-	left: 0;
-	top: 0;
-	border-radius: 10px;
-}
-
-@keyframes glowing {
-	0% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: 400% 0;
-	}
-	100% {
-		background-position: 0 0;
-	}
-}
-
-.text-with-commas {
-    position: relative;
-  }
-
-  .text-with-commas::before,
-  .text-with-commas::after {
-    content: ",";
-    font-size: 48px; /* Adjust comma size as needed */
-    color: red; /* Adjust comma color as needed */
-    position: absolute;
-    top: 0;
-  }
-
-  .text-with-commas::before {
-    left: -20px; /* Adjust comma position as needed */
-  }
-
-  .text-with-commas::after {
-    right: -20px; /* Adjust comma position as needed */
-  }
-
-

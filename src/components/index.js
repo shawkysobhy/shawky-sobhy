@@ -7,4 +7,16 @@ import Social from './Social';
 import Modal from './Modal';
 import ProjectCard from './ProjectCard';
 import ProjectInfo from './ProjectInfo';
-export {  Aside, NavItem, Header ,SectionTitle,Chips,Social,ProjectInfo ,Modal ,ProjectCard};
+import CertificateItem from './CertificateItem'
+export {
+	Aside,
+	Header,
+	SectionTitle,
+	Chips,
+	Social,
+	ProjectInfo,
+	Modal,
+	ProjectCard,
+	NavItem,
+	CertificateItem,
+};

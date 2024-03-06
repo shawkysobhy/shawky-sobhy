@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import NavItem from './NavItem';
+import { NavItem } from './';
 import { useState, useRef, useEffect } from 'react';
 function Aside() {
 	const [activeSection, setActiveSection] = useState(null);
@@ -29,7 +28,7 @@ function Aside() {
 		<nav className='sticky top-0 left-0 flex-col items-center hidden h-screen overflow-y-auto bg-backgroundDark z-14 mdSmall:flex'>
 			<a
 				href='/'
-				className=' glow-on-hover w-[45px] h-[45px] flex items-center justify-center bg-background rounded my-[1.8rem] mx-0 text-white font-black text-[2.2rem] cursor-pointer'>
+				className='w-[45px] h-[45px] flex items-center justify-center bg-background rounded my-[1.8rem] mx-0 text-white font-black text-[2.2rem] cursor-pointer'>
 				S <span className='text-brand'>.</span>
 			</a>
 			<NavItem

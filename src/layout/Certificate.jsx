@@ -1,6 +1,5 @@
 import { CERTIFICATES } from '../data/constant';
-import CertificateItem from '../components/CertificateItem';
-import { SectionTitle } from '../components';
+import { SectionTitle ,CertificateItem} from '../components';
 function Certificate() {
 
 	return (
