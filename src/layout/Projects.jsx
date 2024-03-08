@@ -17,7 +17,7 @@ function Projects() {
 					<p className='leading-loose text-textGray font-note'>
 						{Note_Project}
 					</p>
-					<Link to='/projects' className=' max-w-[200px] styled-link'>
+					<Link target='_blank' to='/projects' className=' max-w-[200px] styled-link'>
 						<span>See more</span>
 						<FaArrowUpRightDots />
 					</Link>

@@ -2,6 +2,9 @@ import { BsBrowserChrome } from 'react-icons/bs';
 import { FaGithubAlt } from 'react-icons/fa6';
 import { useState } from 'react';
 import { ProjectInfo, Modal } from './index';
+import { FaChrome } from 'react-icons/fa';
+
+import demoIMg from '../assets/demoProjectImg.jpg';
 function ProjectCard({ project }) {
 	const [toggle, setToggle] = useState(false);
 	const closeModalHandler = () => {
@@ -19,27 +22,27 @@ function ProjectCard({ project }) {
 		<div>
 			<div className='bg-backgroundLight cursor-pointer rounded-[.8rem] overflow-hidden aspect-video relative	'>
 				<img
-				onClick={openModalHandler}
-					className='w-4/5  absolute overflow-hidden bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-2/5 '
-					src={project.img}
+					onClick={openModalHandler}
+					className='absolute bottom-0 w-4/5 overflow-hidden transform -translate-x-1/2 left-1/2 -translate-y-2/5 '
+					src={project.img || demoIMg}
 				/>
 			</div>
 			<div>
 				<div className='flex items-center gap-[1.2rem] my-[1.6rem]'>
 					<h4 className='font-bold text-md'>{project.title}</h4>
 					<div className='flex-grow h-[1px] bg-white opacity-30'></div>
-					<a href='#'>
+					<a href={project.links.src} target='_blank'>
 						<FaGithubAlt className='icon' />
 					</a>
-					<a>
-						<BsBrowserChrome className='icon' />
+					<a href={project.links.live} target='_blank'>
+						<FaChrome className='icon' />
 					</a>
 				</div>
 				<div className='text-brand '>{project?.tools?.join(' - ')}</div>
-				<p className='leading-relaxed my-2 font-extralight'>
+				<p className='my-2 leading-relaxed font-extralight'>
 					{project.description.substring(0, 113)}
 					<button
-						className='text-brand underline cursor-pointer'
+						className='ml-2 underline cursor-pointer text-brand'
 						onClick={() => openModalHandler()}>
 						{'learn more'}
 						&gt;
