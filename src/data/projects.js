@@ -30,7 +30,7 @@ export const PROJECTS = [
 			src: 'https://github.com/shawkysobhy/JobMatch-Maker',
 			live: 'https://job-match-maker.vercel.app/',
 		},
-		img: '',
+		img: 'https://raw.githubusercontent.com/shawkysobhy/shawky-sobhy/main/src/assets/projects/jobmatchmaker.png',
 	},
 	{
 		title: 'Pizza Pulse',
@@ -52,7 +52,7 @@ export const PROJECTS = [
 			live: 'https://youtube02-shawkysobhy.vercel.app/',
 			src: 'https://github.com/shawkysobhy/Youtube-Clone',
 		},
-		img: '',
+		img: 'https://raw.githubusercontent.com/shawkysobhy/shawky-sobhy/main/src/assets/projects/youtube.png',
 	},
 	{
 		title: 'Rest countries explorer with react',
@@ -108,7 +108,7 @@ export const PROJECTS = [
 			live: 'https://github.com/shawkysobhy/loop-studio',
 			src: 'https://github.com/shawkysobhy/loop-studio',
 		},
-		img: '',
+		img: 'https://raw.githubusercontent.com/shawkysobhy/shawky-sobhy/main/src/assets/projects/loopstudio.png',
 	},
 	{
 		title: 'fatooraha dashboard',
@@ -118,7 +118,7 @@ export const PROJECTS = [
 			live: 'https://shawkysobhy.github.io/fatooraha-dashboard-task/',
 			src: 'https://github.com/shawkysobhy/fatooraha-dashboard-task',
 		},
-		img: '',
+		img: 'https://raw.githubusercontent.com/shawkysobhy/shawky-sobhy/main/src/assets/projects/fatoorah.png',
 	},
 	{
 		title: 'Movie App',
@@ -161,7 +161,7 @@ export const PROJECTS = [
 			live: 'https://shawkysobhy.github.io/Mapty-App/',
 			src: 'https://github.com/shawkysobhy/Mapty-App',
 		},
-		img: '',
+		img: 'https://raw.githubusercontent.com/shawkysobhy/shawky-sobhy/main/src/assets/projects/mapty.png',
 	},
 	{
 		title: 'Social proof section',
@@ -171,7 +171,7 @@ export const PROJECTS = [
 			live: 'https://shawkysobhy.github.io/Social-proof-section/',
 			src: 'https://github.com/shawkysobhy/Social-proof-section',
 		},
-		img: '',
+		img: 'https://raw.githubusercontent.com/shawkysobhy/shawky-sobhy/main/src/assets/projects/socialproof.png',
 	},
 	{
 		title: 'Pig Game',
@@ -191,6 +191,6 @@ export const PROJECTS = [
 			live: 'https://shawkysobhy.github.io/we-are-coming-soon-page/',
 			src: 'https://github.com/shawkysobhy/we-are-coming-soon-page',
 		},
-		img: '',
+		img: 'https://raw.githubusercontent.com/shawkysobhy/shawky-sobhy/main/src/assets/projects/subscribation.png',
 	},
 ];
