@@ -11,13 +11,13 @@ export const PROJECTS = [
 		img: 'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%203253463png.png',
 	},
 	{
-		title: 'WildHut Tracker',
+		title: 'WildHut Dashboard',
 		description:
 			'WildHut Tracker is a robust application designed to streamline the process of checking in and checking out guests visiting cabins. The app not only tracks guest information but also performs calculations and generates statistics graphs for better insights. Authentication ensures that only authorized users can access and manage the data.',
 		tools: ['react', 'mui', 'typescript', 'react qurey'],
 		links: {
-			src: 'https://github.com/shawkysobhy/WildHut-Tracker',
-			live: 'https://wild-hut-tracker.vercel.app/dashboard/',
+			src: 'https://github.com/shawkysobhy/Wild-Hut-Dashboard',
+			live: 'https://github.com/shawkysobhy/Wild-Hut-Dashboard',
 		},
 		img: 'https://raw.githubusercontent.com/shawkysobhy/Portfolio/master/src/assets/project-screenshots/Screenshot%20120650.png',
 	},
