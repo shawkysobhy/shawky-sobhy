@@ -1,8 +1,8 @@
 import { BsBrowserChrome } from 'react-icons/bs';
-import { FaGithubAlt } from 'react-icons/fa6';
 import { useState } from 'react';
 import { ProjectInfo, Modal } from './index';
 import { FaChrome } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 import demoIMg from '../assets/demoProjectImg.jpg';
 function ProjectCard({ project }) {
@@ -29,13 +29,17 @@ function ProjectCard({ project }) {
 			</div>
 			<div>
 				<div className='flex items-center gap-[1.2rem] my-[1.6rem]'>
-					<h4 className='font-bold text-md'>{project.title}</h4>
+					<h4
+						className='font-bold cursor-pointer text-md'
+						onClick={openModalHandler}>
+						{project.title}
+					</h4>
 					<div className='flex-grow h-[1px] bg-white opacity-30'></div>
 					<a href={project.links.src} target='_blank'>
-						<FaGithubAlt className='icon' />
+						<FaGithub className='w-10 h-10 cursor-pointer text-emerald-400 hover:text-emerald-600' />
 					</a>
 					<a href={project.links.live} target='_blank'>
-						<FaChrome className='icon' />
+						<FaChrome className='w-10 h-10 cursor-pointer text-emerald-400 hover:text-emerald-600 ' />
 					</a>
 				</div>
 				<div className='text-brand '>{project?.tools?.join(' - ')}</div>
