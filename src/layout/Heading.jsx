@@ -19,7 +19,7 @@ function Heading() {
 					</p>
 					<a
 						href='#contact'
-						className=' inline-block z-20 border-mintgreen  bg-brand rounded-md text-background font-medium py-[1rem] px-[2.4rem] transition-opacity duration-200 hover:opacity-70 text-sm'>
+						className=' inline-block z-20 border-mintgreen  bg-brand rounded-md text-backgroundLight font-medium py-[1rem] px-[2.4rem] transition-opacity duration-200 hover:opacity-70 text-sm'>
 						Contact Me
 					</a>
 				</div>

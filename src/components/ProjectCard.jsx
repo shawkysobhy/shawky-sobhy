@@ -1,4 +1,3 @@
-import { BsBrowserChrome } from 'react-icons/bs';
 import { useState } from 'react';
 import { ProjectInfo, Modal } from './index';
 import { FaChrome } from 'react-icons/fa';
@@ -22,6 +21,7 @@ function ProjectCard({ project }) {
 		<div>
 			<div className='bg-backgroundLight cursor-pointer rounded-[.8rem] overflow-hidden aspect-video relative	'>
 				<img
+					alt='project screenshot'
 					onClick={openModalHandler}
 					className='absolute bottom-0 w-4/5 overflow-hidden transform -translate-x-1/2 left-1/2 -translate-y-2/5 '
 					src={project.img || demoIMg}
@@ -35,10 +35,16 @@ function ProjectCard({ project }) {
 						{project.title}
 					</h4>
 					<div className='flex-grow h-[1px] bg-white opacity-30'></div>
-					<a href={project.links.src} target='_blank'>
+					<a
+						href={project.links.src}
+						target='_blank'
+						aria-label='visit project repo on github'>
 						<FaGithub className='w-10 h-10 cursor-pointer text-emerald-400 hover:text-emerald-600' />
 					</a>
-					<a href={project.links.live} target='_blank'>
+					<a
+						href={project.links.live}
+						target='_blank'
+						aria-label='visit project live demo'>
 						<FaChrome className='w-10 h-10 cursor-pointer text-emerald-400 hover:text-emerald-600 ' />
 					</a>
 				</div>

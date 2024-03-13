@@ -6,16 +6,28 @@ import { CONTACTS } from '../data/contact';
 function Social() {
 	return (
 		<div className='flex space-x-[1.6rem]'>
-			<a className='iconContainer' target='_blank' href={CONTACTS.linkedIn}>
+			<a
+				className='iconContainer'
+				target='_blank'
+				aria-label='my linkedin profile'
+				href={CONTACTS.linkedIn}>
 				<FaLinkedin className='icon' />
 			</a>
-			<a className='iconContainer' target='_blank' href={CONTACTS.github}>
+			<a
+				className='iconContainer'
+				target='_blank'
+				aria-label='my github profile'
+				href={CONTACTS.github}>
 				<FaGithub className='icon' />
 			</a>
-			<a className='iconContainer' target='_blank' href={`mailto:${CONTACTS.email}`}>
+			<a
+				className='iconContainer'
+				aria-label='contact me with my gmail'
+				target='_blank'
+				href={`mailto:${CONTACTS.email}`}>
 				<IoMail className='icon' />
 			</a>
-			<a className='iconContainer' href='#contact'>
+			<a className='iconContainer' href='#contact' aria-label='contact'>
 				<IoCallSharp className='icon' />
 			</a>
 		</div>

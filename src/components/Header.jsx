@@ -9,7 +9,7 @@ function Header() {
 			<a
 				href={CONTACTS.ruesme}
 				target='_blank'
-				className='px-4 py-2  md:px-8  text-[16px] md:text-sm font-semibold font-titilllium text-gray-200 transition-colors duration-200 border outline-none cursor-pointer bg-mintgreen rounded-md border-brand hover:opacity-80 flex items-center justify-center space-x-4'>
+				className='px-4 py-2  md:px-8  text-[16px] md:text-sm font-semibold font-titilllium text-gray-200 transition-colors duration-200 border outline-none cursor-pointer bg-emerald-800 rounded-md border-mintgreen hover:opacity-80 flex items-center justify-center space-x-4'>
 				<span>My resume</span> <FaGoogleDrive />
 			</a>
 		</header>
