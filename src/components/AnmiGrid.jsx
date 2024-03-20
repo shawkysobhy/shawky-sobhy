@@ -1,7 +1,16 @@
 import anime from 'animejs';
+import { useEffect } from 'react';
 const WaterDropGrid = () => {
+	useEffect(() => {
+		const element = document.querySelector('.dotgrid');
+		console.log('elements', element);
+		if (element) {
+			element.click();
+		}
+	}, []);
+
 	return (
-		<div className='absolute right-0 top-0 grid place-content-center  px-8 py-12 max-w-[80%] z-0 '>
+		<div className=' absolute right-0 top-0 grid place-content-center  px-8 py-12 max-w-[80%] z-0 '>
 			<DotGrid />
 		</div>
 	);
@@ -9,7 +18,6 @@ const WaterDropGrid = () => {
 
 const GRID_WIDTH = 25;
 const GRID_HEIGHT = 20;
-
 const DotGrid = () => {
 	const handleDotClick = (e) => {
 		anime({
@@ -40,7 +48,7 @@ const DotGrid = () => {
 		for (let j = 0; j < GRID_HEIGHT; j++) {
 			dots.push(
 				<div
-					className='group  rounded-full p-[.8rem] cursor-crosshair transition-all duration-200   '
+					className='group dotgrid rounded-full p-[.8rem] cursor-crosshair transition-all duration-200   '
 					data-index={index}
 					key={`${i}-${j}`}>
 					<div
