@@ -5,7 +5,7 @@ function Heading() {
 		<section className='section-wrapper '>
 			<div className='relative z-10 w-fit my-[4.8rem] mx-0'>
 				<div className='relative overflow-hidden text-white w-fit'>
-					<h1 className='text-xl font-black md:text-2xl'>
+					<h1 className='text-xl font-black md:text-[8rem]'>
 						{NAME}
 						<span className='text-brand'> . </span>
 					</h1>

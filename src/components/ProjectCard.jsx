@@ -23,7 +23,7 @@ function ProjectCard({ project }) {
 				<img
 					alt='project screenshot'
 					onClick={openModalHandler}
-					className='absolute bottom-0 w-4/5 overflow-hidden transform -translate-x-1/2 left-1/2 -translate-y-2/5 '
+					className='absolute bottom-0 w-4/5 transform -translate-x-1/2 overf low-hidden left-1/2 -translate-y-2/5 hover:w-[95%] duration-300'
 					src={project.img || demoIMg}
 				/>
 			</div>
@@ -52,7 +52,7 @@ function ProjectCard({ project }) {
 				<p className='my-2 leading-relaxed font-extralight'>
 					{project.description.substring(0, 113)}
 					<button
-						className='ml-2 underline cursor-pointer text-brand'
+						className='ml-2 font-semibold underline cursor-pointer text-brand'
 						onClick={() => openModalHandler()}>
 						{'learn more'}
 						&gt;

@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 const WaterDropGrid = () => {
 	useEffect(() => {
 		const element = document.querySelector('.dotgrid');
-		console.log('elements', element);
 		if (element) {
 			element.click();
 		}

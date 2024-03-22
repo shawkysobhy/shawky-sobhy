@@ -21,8 +21,7 @@ function Aside() {
 				observer.current.unobserve(section);
 			});
 		};
-	}, []);
-	console.log(activeSection);
+	}, [activeSection]);
 
 	return (
 		<nav className='sticky top-0 left-0 flex-col items-center hidden h-screen overflow-y-auto bg-backgroundDark z-14 mdSmall:flex'>
@@ -53,7 +52,7 @@ function Aside() {
 				to='contact'
 				title={'Contact'}
 				activeSection={activeSection}
-				setActiveSection={activeSection}
+				setActiveSection={setActiveSection}
 			/>
 		</nav>
 	);

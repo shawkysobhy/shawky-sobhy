@@ -3,6 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 import { IoMail } from 'react-icons/io5';
 import { IoCallSharp } from 'react-icons/io5';
 import { CONTACTS } from '../data/contact';
+const icon = 'text-gray-400 w-9 h-9 cursor-pointer hover:text-white';
 function Social() {
 	return (
 		<div className='flex space-x-[1.6rem]'>
@@ -11,24 +12,24 @@ function Social() {
 				target='_blank'
 				aria-label='my linkedin profile'
 				href={CONTACTS.linkedIn}>
-				<FaLinkedin className='icon' />
+				<FaLinkedin className={icon} />
 			</a>
 			<a
 				className='iconContainer'
 				target='_blank'
 				aria-label='my github profile'
 				href={CONTACTS.github}>
-				<FaGithub className='icon' />
+				<FaGithub className={icon} />
 			</a>
 			<a
 				className='iconContainer'
 				aria-label='contact me with my gmail'
 				target='_blank'
 				href={`mailto:${CONTACTS.email}`}>
-				<IoMail className='icon' />
+				<IoMail className={icon} />
 			</a>
 			<a className='iconContainer' href='#contact' aria-label='contact'>
-				<IoCallSharp className='icon' />
+				<IoCallSharp className={icon} />
 			</a>
 		</div>
 	);

@@ -40,13 +40,7 @@ body {
 .icon:hover {
 	color: white;
 }
-.about::first-letter {
-	background: #232323;
-	padding: 5px 10px;
-	border-radius: 5px;
-	margin-right: 5px;
-	font-size: 30px;
-} */
+ */
 .terminalIcon {
 	width: 30px;
 	height: 30px;
@@ -64,6 +58,13 @@ body {
 ::selection {
 	background-color: #0aff9d;
 	color: #111;
+}
+.about::first-letter {
+	background: #232323;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin-right: 5px;
+	font-size: 30px;
 }
 
 .filter::-webkit-scrollbar {

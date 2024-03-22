@@ -4,20 +4,22 @@ import { SectionTitle, Chips, Social } from '../components';
 import { tools } from '../data/constant';
 function About() {
 	return (
-		<section  className='section-wrapper' data-section id='about' >
+		<section className='section-wrapper' data-section id='about'>
 			<SectionTitle direction={'row'} title={'About'} />
 			<div className='grid grid-cols-1 md900:grid-cols-[minmax(0,1fr)_300px] gap-[3rem]'>
-				<div>
-					<p className='about font-extralight leading-loose mb-[2.4rem]'>
+				<div className='leading-loose font-extralight'>
+					<p className='mb-10 about'>
 						Hey, I&apos;m Shawky Sobhy. I&apos;m passionate about web and
 						frontend development and love building web applications. I graduated
-						with a degree in Computer Science in 2023. I have experience
-						contributing to projects and assisting relatives with their
-						development needs. Currently, I am actively searching for full-time
-						opportunities in the field while based in Egypt
+						with a degree in Computer Science in 2023.
+					</p>
+					<p className='mb-10 about'>
+						I have experience contributing to projects and assisting relatives
+						with their development needs. Currently, I am actively searching for
+						full-time opportunities in the field while based in Egypt
 					</p>
 					<div className='flex items-center gap-6'>
-						<p className='text-brand font-bold flex flex-row items-center gap-4'>
+						<p className='flex flex-row items-center gap-4 font-bold text-brand'>
 							My Links <FaArrowRightLong />
 						</p>
 						<Social />
