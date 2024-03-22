@@ -13,12 +13,12 @@ function ProjectInfo({ project }) {
 						Project Links
 						<span className='text-brand'>.</span>
 					</h3>{' '}
-					<div className='flex space-x-6 cursor-pointer text-brand'>
+					<div className='flex flex-wrap space-x-6 cursor-pointer text-brand'>
 						<a href={links.src} target='_blank' className='flex items-center '>
-							<FaGithub className='mr-2'/> source code
+							<FaGithub className='mr-2' /> source code
 						</a>
 						<a href={links.live} target='_blank' className='flex items-center'>
-						<FaChrome className='mr-2'/>	live demo
+							<FaChrome className='mr-2' /> live demo
 						</a>
 					</div>
 				</div>
