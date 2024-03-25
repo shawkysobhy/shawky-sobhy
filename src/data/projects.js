@@ -3,7 +3,7 @@ export const PROJECTS = [
 		title: 'WildHut Dashboard',
 		description:
 			'WildHut Tracker is a robust application designed to streamline the process of checking in and checking out guests visiting cabins. The app not only tracks guest information but also performs calculations and generates statistics graphs for better insights. Authentication ensures that only authorized users can access and manage the data.',
-		tools: ['react', 'tailwind', 'javascript', 'react qurey'],
+		tools: ['react', 'tailwind', 'react qurey'],
 		links: {
 			src: 'https://github.com/shawkysobhy/Wild-Hut-Dashboard',
 			live: 'https://wild-hut-dashboard.vercel.app/',
