@@ -1,9 +1,9 @@
 import { NavItem } from '.';
 import { useState, useRef, useEffect } from 'react';
 
-function Aside() {
-	const [activeSection, setActiveSection] = useState<string>(''); // Specify the type as string
-	const observer = useRef<IntersectionObserver | null>(null); // Specify the type as IntersectionObserver | null
+function Sidbar() {
+	const [activeSection, setActiveSection] = useState<string>(''); 
+	const observer = useRef<IntersectionObserver | null>(null); 
 
 	useEffect(() => {
 		observer.current = new IntersectionObserver((entries) => {
@@ -63,4 +63,4 @@ function Aside() {
 	);
 }
 
-export default Aside;
+export default Sidbar;

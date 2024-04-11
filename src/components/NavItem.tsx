@@ -1,4 +1,15 @@
-function NavItem({ to, title, activeSection, setActiveSection }) {
+function NavItem({
+	to,
+	title,
+	activeSection,
+	setActiveSection,
+}: {
+	to: string;
+	title: string;
+	activeSection:string;
+	setActiveSection:React.Dispatch<React.SetStateAction<string>>
+;
+}) {
 	const activeStyle = 'border-brand opacity-100 bg-background';
 	const nonActiveStyle = 'border-backgroundDark opacity-70 ';
 	return (

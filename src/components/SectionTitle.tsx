@@ -1,4 +1,9 @@
-function SectionTitle({ direction, title, fontsize }) {
+interface SectionTitleProps {
+	title: string;
+	direction?: string;
+	fontsize?: string;
+}
+function SectionTitle({ direction, title, fontsize }: SectionTitleProps) {
 	return (
 		<div
 			className={`flex  mb-[2.4rem] items-center ${

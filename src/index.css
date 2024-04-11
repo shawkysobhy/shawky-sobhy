@@ -60,3 +60,20 @@ body {
 .filter::-webkit-scrollbar-thumb {
 	background-color: #888; /* Set the color of the scrollbar thumb */
 }
+
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	background-color: rgb(43, 44, 55);
+}
+::-webkit-scrollbar-track {
+	background: rgb(43, 44, 55);
+}
+::-webkit-scrollbar-thumb {
+	background: gray;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #3cbb6f;
+}

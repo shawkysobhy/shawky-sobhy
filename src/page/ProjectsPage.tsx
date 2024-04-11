@@ -1,13 +1,14 @@
 import { Header } from '../components';
 import ProjectCard from '../components/ProjectCard';
 import { SiHey } from 'react-icons/si';
-
+import { BsArrowLeftSquareFill } from 'react-icons/bs';
 import { PROJECTS } from '../data/projects';
 import { useLayoutEffect, useState } from 'react';
 import { Note_Project } from '../data/constant';
 import Contact from '../layout/Contact';
 import Filter from '../components/Filter';
 import { Project, TechStack, tech } from '../models';
+import { Link } from 'react-router-dom';
 function ProjectsPage() {
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
@@ -30,20 +31,25 @@ function ProjectsPage() {
 					<h3 className={'font-black text-lg'}>
 						All Projects
 						<span className='text-brand'>.</span>
-					</h3>{' '}
-					<Filter
-						filterKeyword={filterKeyword}
-						setFilterKeyword={setFilterKeyword}
-						options={[
-							// { value: 'all', label: 'all' },
-							{ value: tech.React, label: 'React' },
-							{ value: tech.ReduxToolkit, label: 'Redux' },
-							{ value: tech.Typescript, label: 'Typescript' },
-							{ value: tech.Tailwind, label: 'Tailwind' },
-							{ value: tech.Javascript, label: 'javascript' },
-							{ value: tech.Mui, label: 'Mui' },
-						]}
-					/>
+					</h3>
+					<div className='flex items-center space-x-4'>
+						<Link to='/'>
+							<BsArrowLeftSquareFill className='w-12 h-12 cursor-pointer text-emerald-300 hover:text-emerald-600' />
+						</Link>
+						<Filter
+							filterKeyword={filterKeyword}
+							setFilterKeyword={setFilterKeyword}
+							options={[
+								{ value: 'all', label: 'all' },
+								{ value: tech.React, label: 'React' },
+								{ value: tech.ReduxToolkit, label: 'Redux' },
+								{ value: tech.Typescript, label: 'Typescript' },
+								{ value: tech.Tailwind, label: 'Tailwind' },
+								{ value: tech.Javascript, label: 'javascript' },
+								{ value: tech.Mui, label: 'Mui' },
+							]}
+						/>
+					</div>
 				</div>
 				<div className='px-10 py-8 my-20 border-r-4 border-orange-600 rounded-md bg-darkGray'>
 					<p className='leading-loose text-textGray font-titilllium'>

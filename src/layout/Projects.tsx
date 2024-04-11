@@ -16,7 +16,7 @@ function Projects() {
 					target='_blank'
 					to='/projects'
 					aria-label='visit all project page'
-					className=' w-[60%] md:w-[40%]  mx-auto rounded-full px-8 py-4  text-sm font-bold text-white transition-colors duration-200 border  outline-none cursor-pointer bg-emerald-800 font-titilllium tracking-wider border-mintgreen hover:bg-backgroundLight flex items-center justify-center space-x-4 mr-auto'>
+					className=' w-[60%] md:w-[40%]  mx-auto rounded-2xl px-8 py-4  text-sm font-bold text-white transition-colors duration-200 border  outline-none cursor-pointer bg-emerald-800 font-titilllium tracking-wider border-mintgreen hover:opacity-80 flex items-center justify-center space-x-4 mr-auto'>
 					<span>See more</span>
 					<div className='flex'>
 						<FaChevronRight /> <FaChevronRight />{' '}
@@ -26,11 +26,4 @@ function Projects() {
 		</section>
 	);
 }
-/**			<div className='py-20 w-ful'>
-				<div className='flex flex-col px-6 py-4 space-y-12 border-r-4 border-orange-600 rounded-md bg-darkGray'>
-					<p className='leading-loose text-textGray font-note'>
-						{Note_Project}
-					</p>
-				</div>
-			</div> */
 export default Projects;

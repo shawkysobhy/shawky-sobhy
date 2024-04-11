@@ -1,7 +1,8 @@
 import { FaChrome } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
+import { Project } from '../models';
 
-function ProjectInfo({ project }) {
+function ProjectInfo({ project }:{project:Project}) {
 	const { title, description, img, links } = project;
 	return (
 		<div className='max-w-[700px] w-full  rounded-[1.2rem] overflow-hidden bg-backgroundLight text-white'>

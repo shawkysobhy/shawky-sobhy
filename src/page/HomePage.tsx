@@ -1,4 +1,4 @@
-import { Aside, Header } from '../components';
+import { Sidbar, Header } from '../components';
 import About from '../layout/About';
 import Projects from '../layout/Projects';
 import Certificate from '../layout/Certificate';
@@ -8,7 +8,7 @@ import Contact from '../layout/Contact';
 export default function HomePage() {
 	return (
 		<div className='relative grid gird-cols-1  mdSmall:grid-cols-[60px_minmax(0,1fr)]'>
-			<Aside />
+			<Sidbar />
 			<main className='bg-background'>
 				<Header />
 				<Heading />
