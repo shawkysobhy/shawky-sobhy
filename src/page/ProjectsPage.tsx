@@ -7,17 +7,17 @@ import { useLayoutEffect, useState } from 'react';
 import { Note_Project } from '../data/constant';
 import Contact from '../layout/Contact';
 import Filter from '../components/Filter';
+import { Project, TechStack, tech } from '../models';
 function ProjectsPage() {
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-	const [filterKeyword, setFilterKeyword] = useState('all');
-
+	const [filterKeyword, setFilterKeyword] = useState<TechStack | 'all'>('all');
 	let filterdList;
-	if (filterKeyword == 'all') {
+	if (filterKeyword === 'all') {
 		filterdList = PROJECTS;
 	} else {
-		filterdList = PROJECTS.filter((project) =>
+		filterdList = PROJECTS.filter((project: Project) =>
 			project?.tools?.includes(filterKeyword)
 		);
 	}
@@ -35,14 +35,13 @@ function ProjectsPage() {
 						filterKeyword={filterKeyword}
 						setFilterKeyword={setFilterKeyword}
 						options={[
-							{ value: 'all', label: 'all' },
-							{ value: 'html', label: 'Html' },
-							{ value: 'css', label: 'Css' },
-							{ value: 'javascript', label: 'javascript' },
-							{ value: 'tailwind', label: 'Tailwind' },
-							{ value: 'react', label: 'React' },
-							{ value: 'redux', label: 'Redux' },
-							{ value: 'mui', label: 'Mui' },
+							// { value: 'all', label: 'all' },
+							{ value: tech.React, label: 'React' },
+							{ value: tech.ReduxToolkit, label: 'Redux' },
+							{ value: tech.Typescript, label: 'Typescript' },
+							{ value: tech.Tailwind, label: 'Tailwind' },
+							{ value: tech.Javascript, label: 'javascript' },
+							{ value: tech.Mui, label: 'Mui' },
 						]}
 					/>
 				</div>
