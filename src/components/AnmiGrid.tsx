@@ -1,15 +1,16 @@
 import anime from 'animejs';
 import { useEffect } from 'react';
-const WaterDropGrid = () => {
+
+const WaterDropGrid: React.FC = () => {
 	useEffect(() => {
-		const element = document.querySelector('.dotgrid');
+		const element = document.querySelector('.dotgrid') as HTMLElement | null;;
 		if (element) {
 			element.click();
 		}
 	}, []);
 
 	return (
-		<div className=' absolute right-0 top-0 grid place-content-center  px-8 py-12 max-w-[80%] z-0 '>
+		<div className='absolute right-0 top-0 grid place-content-center px-8 py-12 max-w-[80%] z-0'>
 			<DotGrid />
 		</div>
 	);
@@ -17,8 +18,9 @@ const WaterDropGrid = () => {
 
 const GRID_WIDTH = 25;
 const GRID_HEIGHT = 20;
-const DotGrid = () => {
-	const handleDotClick = (e) => {
+
+const DotGrid: React.FC = () => {
+	const handleDotClick = (e: React.MouseEvent<HTMLDivElement>) => {
 		anime({
 			targets: '.dot-point',
 			scale: [
@@ -35,24 +37,25 @@ const DotGrid = () => {
 			],
 			delay: anime.stagger(100, {
 				grid: [GRID_WIDTH, GRID_HEIGHT],
-				from: e.target.dataset.index,
+				from: Number(e.currentTarget.dataset.index),
 			}),
 		});
 	};
 
-	const dots = [];
+	const dots: JSX.Element[] = [];
 	let index = 0;
 
 	for (let i = 0; i < GRID_WIDTH; i++) {
 		for (let j = 0; j < GRID_HEIGHT; j++) {
 			dots.push(
 				<div
-					className='group dotgrid rounded-full p-[.8rem] cursor-crosshair transition-all duration-200   '
+					className='group dotgrid rounded-full p-[.8rem] cursor-crosshair transition-all duration-200'
 					data-index={index}
 					key={`${i}-${j}`}>
 					<div
 						className='w-4 h-4 rounded-full opacity-50 dot-point bg-gradient-to-b from-background to-white group-hover:from-white group-hover:to-brand'
 						data-index={index}
+						onClick={handleDotClick}
 					/>
 				</div>
 			);
@@ -62,7 +65,6 @@ const DotGrid = () => {
 
 	return (
 		<div
-			onClick={handleDotClick}
 			style={{ gridTemplateColumns: `repeat(${GRID_WIDTH}, 1fr)` }}
 			className='grid w-fit'>
 			{dots}

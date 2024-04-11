@@ -2,9 +2,7 @@ import { useState } from 'react';
 import { ProjectInfo, Modal } from './index';
 import { FaChrome } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
-
-import demoIMg from '../assets/demoProjectImg.jpg';
-function ProjectCard({ project }) {
+function ProjectCard({ project }:{project:any}) {
 	const [toggle, setToggle] = useState(false);
 	const closeModalHandler = () => {
 		setToggle(false);
@@ -24,7 +22,7 @@ function ProjectCard({ project }) {
 					alt='project screenshot'
 					onClick={openModalHandler}
 					className='absolute bottom-0 w-4/5 transform -translate-x-1/2 overf low-hidden left-1/2 -translate-y-2/5 hover:w-[95%] duration-300'
-					src={project.img || demoIMg}
+					src={project.img || 'demoIMg'}
 				/>
 			</div>
 			<div>

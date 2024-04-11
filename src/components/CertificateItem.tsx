@@ -1,6 +1,12 @@
 import { IoLink } from 'react-icons/io5';
-
-function CertificateItem({ certificateName, certificateLink }) {
+interface CertificateItemProps {
+	certificateName: string;
+	certificateLink: string;
+}
+function CertificateItem({
+	certificateName,
+	certificateLink,
+}: CertificateItemProps) {
 	return (
 		<li className='flex items-center my-[2rem] gap-3'>
 			<p>{certificateName}</p>

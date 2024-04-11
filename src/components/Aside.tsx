@@ -1,8 +1,10 @@
-import { NavItem } from './';
+import { NavItem } from '.';
 import { useState, useRef, useEffect } from 'react';
+
 function Aside() {
-	const [activeSection, setActiveSection] = useState(null);
-	const observer = useRef(null);
+	const [activeSection, setActiveSection] = useState<string>(''); // Specify the type as string
+	const observer = useRef<IntersectionObserver | null>(null); // Specify the type as IntersectionObserver | null
+
 	useEffect(() => {
 		observer.current = new IntersectionObserver((entries) => {
 			const visibleSection = entries.find(
@@ -12,13 +14,16 @@ function Aside() {
 				setActiveSection(visibleSection.id);
 			}
 		});
-		const sections = document.querySelectorAll('[data-section]');
+
+		const sections = document.querySelectorAll(
+			'[data-section]'
+		) as NodeListOf<HTMLElement>; // Specify the type as NodeListOf<HTMLElement>
 		sections.forEach((section) => {
-			observer.current.observe(section);
+			observer.current?.observe(section);
 		});
 		return () => {
 			sections.forEach((section) => {
-				observer.current.unobserve(section);
+				observer.current?.unobserve(section);
 			});
 		};
 	}, [activeSection]);

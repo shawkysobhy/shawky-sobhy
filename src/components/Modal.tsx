@@ -1,7 +1,13 @@
 import { createPortal } from 'react-dom';
 import { IoCloseOutline } from 'react-icons/io5';
-function Modal({ onClose, children }) {
-	const handleOverlayClick = (e) => {
+interface ModalProps {
+	children: React.ReactNode;
+	onClose:()=>void;
+}
+function Modal({ onClose, children }:ModalProps) {
+	const handleOverlayClick = (
+		e: React.MouseEvent<HTMLDivElement, MouseEvent>
+	) => {
 		if (e.target === e.currentTarget) {
 			onClose();
 		}
@@ -9,7 +15,7 @@ function Modal({ onClose, children }) {
 
 	return createPortal(
 		<div
-			onClick={handleOverlayClick}
+			onClick={(e)=>handleOverlayClick(e)}
 			className='fixed  top-0 left-0 bottom-0 right-0 h-screen overflow-y-auto  backdrop-blur-sm	bg-bgOpaque  flex justify-center z-[400] py-[4.8rem] px-[1.2rem] items-start
     '>
 			<div className='modal contant'>
