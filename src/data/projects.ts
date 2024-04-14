@@ -3,9 +3,10 @@ import { Project, tech } from '../models';
 enum ProjectIds {
 	Trello101,
 	WildHutDashboard,
-	LearningManagementSystem,
+	PromptStorm,
 	JobMatchMaker,
 	PizzaPulse,
+	LearningManagementSystem,
 	YoutubeClone,
 	RestCountriesExplorer,
 	ReactQuiz,
@@ -39,6 +40,18 @@ export const PROJECTS: Project[] = [
 			live: 'https://trello101.vercel.app/',
 		},
 		img: 'https://raw.githubusercontent.com/shawkysobhy/Trello101/main/public/trello-screenshot.png',
+	},
+	{
+		id: ProjectIds.PromptStorm,
+		title: 'Prompt Storm',
+		description:
+			'Prompts Storm website where share with other strong and creative ai prompt can help you to deal with ai took like chatgpt with all benefits',
+		tools: [tech.Next, tech.Tailwind, tech.NextAuth],
+		links: {
+			src: 'https://github.com/shawkysobhy/Prompt-Storm',
+			live: 'https://prompt-storm.vercel.app/',
+		},
+		img: 'https://raw.githubusercontent.com/shawkysobhy/Prompt-Storm/main/public/Screenshot.png',
 	},
 	{
 		id: ProjectIds.WildHutDashboard,

@@ -15,12 +15,12 @@ export type TechStack =
 	| 'Supabase'
 	| 'React Hook Form'
 	| 'React Router'
-	| 'Rapid Api';
+	| 'Rapid Api'
+	| 'NextAuth';
 
 export const tech: {
 	[key: string]: TechStack;
 } = {
-	Next: 'Next',
 	React: 'React',
 	Typescript: 'Typescript',
 	Javascript: 'Javascript',
@@ -37,6 +37,8 @@ export const tech: {
 	ReactHookForm: 'React Hook Form',
 	ReactRouter: 'React Router',
 	RapidApi: 'Rapid Api',
+	Next: 'Next',
+	NextAuth: 'NextAuth',
 };
 
 export interface Project {
