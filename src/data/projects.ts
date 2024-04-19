@@ -3,6 +3,7 @@ import { Project, tech } from '../models';
 enum ProjectIds {
 	Trello101,
 	WildHutDashboard,
+	HooBank,
 	PromptStorm,
 	JobMatchMaker,
 	PizzaPulse,
@@ -23,6 +24,22 @@ enum ProjectIds {
 	subscriptionProductPage,
 }
 export const PROJECTS: Project[] = [
+	{
+		id: ProjectIds.HooBank,
+		title: 'Bank Landing Page',
+		description:
+			'A landing page project built with TypeScript, React, and Tailwind CSS. This project showcases various sections and layouts for creating modern and responsive landing pages.',
+		tools: [
+			tech.React,
+			tech.Typescript,
+			tech.Tailwind,
+		],
+		links: {
+			src: 'https://github.com/shawkysobhy/hoo-bank-landing-page',
+			live: 'https://hoo-bank-intro.vercel.app/',
+		},
+		img: 'https://raw.githubusercontent.com/shawkysobhy/hoo-bank-landing-page/main/public/screenshot.png',
+	},
 	{
 		id: ProjectIds.Trello101,
 		title: 'Trello 101',
