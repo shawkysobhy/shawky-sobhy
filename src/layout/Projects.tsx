@@ -1,7 +1,6 @@
 import { SectionTitle, ProjectCard } from '../components';
 import { Link } from 'react-router-dom';
 import { PROJECTS } from '../data/projects';
-import { FaChevronRight } from 'react-icons/fa6';
 function Projects() {
 	return (
 		<section data-section id='projects' className='section-wrapper'>
@@ -16,11 +15,8 @@ function Projects() {
 					target='_blank'
 					to='/projects'
 					aria-label='visit all project page'
-					className=' w-[60%] md:w-[40%]  mx-auto rounded-2xl px-8 py-4  text-sm font-bold text-white transition-colors duration-200 border  outline-none cursor-pointer bg-emerald-800 font-titilllium tracking-wider border-mintgreen hover:opacity-80 flex items-center justify-center space-x-4 mr-auto'>
+					className='flex items-start justify-center px-6 py-2  text-sm font-semibold  text-white transition-colors duration-200  outline-none cursor-pointer  min-w-[200px] rounded-lg bg-emerald-800 font-titilllium hover:opacity-80'>
 					<span>See more</span>
-					<div className='flex'>
-						<FaChevronRight /> <FaChevronRight />{' '}
-					</div>
 				</Link>
 			</div>
 		</section>
