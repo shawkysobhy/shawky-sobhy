@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
 		],
 		links: {
 			src: 'https://github.com/shawkysobhy/hoo-bank-landing-page',
-			live: 'https://hoo-bank-intro.vercel.app/',
+			live: 'https://hoobank-intro.vercel.app/',
 		},
 		img: 'https://raw.githubusercontent.com/shawkysobhy/hoo-bank-landing-page/main/public/screenshot.png',
 	},
