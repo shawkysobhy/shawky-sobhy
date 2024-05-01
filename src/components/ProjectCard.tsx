@@ -37,13 +37,13 @@ function ProjectCard({ project }:{project:any}) {
 						href={project.links.src}
 						target='_blank'
 						aria-label='visit project repo on github'>
-						<FaGithub className='w-10 h-10 cursor-pointer text-emerald-400 hover:text-emerald-600' />
+						<FaGithub className='w-10 h-10 cursor-pointer text-brand hover:text-emerald-600' />
 					</a>
 					<a
 						href={project.links.live}
 						target='_blank'
 						aria-label='visit project live demo'>
-						<FaChrome className='w-10 h-10 cursor-pointer text-emerald-400 hover:text-emerald-600 ' />
+						<FaChrome className='w-10 h-10 cursor-pointer text-brand hover:text-emerald-600 ' />
 					</a>
 				</div>
 				<div className='text-brand '>{project?.tools?.join(' - ')}</div>
@@ -52,8 +52,7 @@ function ProjectCard({ project }:{project:any}) {
 					<button
 						className='ml-2 font-semibold underline cursor-pointer text-brand'
 						onClick={() => openModalHandler()}>
-						{'learn more'}
-						&gt;
+						{'more details '}
 					</button>
 				</p>
 			</div>

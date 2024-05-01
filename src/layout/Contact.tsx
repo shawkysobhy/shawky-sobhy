@@ -1,7 +1,7 @@
 import { IoMdMailOpen } from 'react-icons/io';
 function Contact() {
 	return (
-		<section data-section id='contact' className='mb-0 section-wrapper'>
+		<section data-section id='contact' className='mb-0 section-wrapper '>
 			<div className='flex flex-col items-center'>
 				<p className='text-xl font-black text-center md:text-2xl'>
 					Contact <span className='text-brand'>.</span>{' '}

@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 import { IoMail } from 'react-icons/io5';
 import { IoCallSharp } from 'react-icons/io5';
 import { CONTACTS } from '../data/contact';
-const icon = 'text-gray-400 w-9 h-9 cursor-pointer hover:text-white';
+const icon = 'text-white w-9 h-9 cursor-pointer hover:text-white';
 function Social() {
 	return (
 		<div className='flex space-x-[1.6rem]'>

@@ -9,13 +9,13 @@ function CertificateItem({
 }: CertificateItemProps) {
 	return (
 		<li className='flex items-center my-[2rem] gap-3'>
-			<p>{certificateName}</p>
 			<a
+				target='_blank'
 				href={certificateLink}
-				className='text-brand'
 				aria-label='see certification details'>
-				<IoLink />
+				<p>{certificateName}</p>
 			</a>
+			<IoLink className='text-brand' />
 		</li>
 	);
 }

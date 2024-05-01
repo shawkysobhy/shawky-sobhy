@@ -17,7 +17,6 @@ export default {
 			},
 			colors: {
 				background: '#111',
-
 				brand: '#0aff9d',
 				mintgreen: '#1b8e5e',
 				bgOpaque: 'hsla(0,0%,7%,.25)',

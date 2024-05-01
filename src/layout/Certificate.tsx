@@ -4,7 +4,7 @@ function Certificate() {
 
 	return (
 		<section data-section id='certificate' className='section-wrapper' >
-			<SectionTitle title='Certificate' direction='row' fontsize='text-lg' />
+			<SectionTitle title='Certificate' direction='row' />
 			<ul>
 				{CERTIFICATES.map((item) => (
 					<CertificateItem

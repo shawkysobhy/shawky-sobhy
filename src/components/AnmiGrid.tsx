@@ -16,7 +16,7 @@ const WaterDropGrid: React.FC = () => {
 	);
 };
 
-const GRID_WIDTH = 25;
+const GRID_WIDTH = 30;
 const GRID_HEIGHT = 20;
 
 const DotGrid: React.FC = () => {
@@ -24,15 +24,15 @@ const DotGrid: React.FC = () => {
 		anime({
 			targets: '.dot-point',
 			scale: [
-				{ value: 1.35, easing: 'easeOutSine', duration: 250 },
+				{ value: 1.35, easing: 'easeOutSine', duration: 200 },
 				{ value: 1, easing: 'easeInOutQuad', duration: 500 },
 			],
 			translateY: [
-				{ value: -15, easing: 'easeOutSine', duration: 250 },
+				{ value: -15, easing: 'easeOutSine', duration: 200 },
 				{ value: 0, easing: 'easeInOutQuad', duration: 500 },
 			],
 			opacity: [
-				{ value: 1, easing: 'easeOutSine', duration: 250 },
+				{ value: 1, easing: 'easeOutSine', duration: 200 },
 				{ value: 0.5, easing: 'easeInOutQuad', duration: 500 },
 			],
 			delay: anime.stagger(100, {
@@ -53,7 +53,7 @@ const DotGrid: React.FC = () => {
 					data-index={index}
 					key={`${i}-${j}`}>
 					<div
-						className='w-4 h-4 rounded-full opacity-50 dot-point bg-gradient-to-b from-background to-white group-hover:from-white group-hover:to-brand'
+						className='w-4 h-4 rounded-full opacity-50 dot-point bg-gradient-to-b from-white to-background group-hover:from-gray-2000 group-hover:to-brand'
 						data-index={index}
 						onClick={handleDotClick}
 					/>
