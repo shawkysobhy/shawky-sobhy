@@ -9,6 +9,7 @@ Welcome to my portfolio! This repository showcases some of the projects I've wor
 ## Built With
 
 - React Js
+- TypeScript
 - Tailwind
 - React Router
 - React icons
