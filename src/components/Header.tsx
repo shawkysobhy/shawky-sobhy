@@ -9,9 +9,12 @@ function Header() {
 			<a
 				href={CONTACTS.ruesme}
 				target='_blank'
-				className='px-4 py-2  md:px-8  text-[16px] md:text-sm font-semibold font-titilllium text-backgroundLight transition-colors duration-200 border outline-none cursor-pointer bg-brand rounded-md border-mintgreen hover:opacity-80 flex items-center justify-center space-x-4'>
+				className='px-6 py-2 font-bold bg-brand text-gray-200 w-fit transition-all shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]   md:px-8  text-[16px] md:text-sm  font-titilllium  duration-200  outline-none cursor-pointer    flex items-center justify-center space-x-4'>
 				<span>My resume</span> <FaGoogleDrive />
 			</a>
+			{/* <button className='px-6 py-2 font-medium bg-indigo-500 text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]'>
+					Hover me
+				</button> */}
 		</header>
 	);
 }

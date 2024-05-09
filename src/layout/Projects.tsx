@@ -12,11 +12,10 @@ function Projects() {
 			</div>
 			<div className='flex items-center justify-center w-full py-20'>
 				<Link
-					target='_blank'
 					to='/projects'
 					aria-label='visit all project page'
-					className='flex items-start justify-center px-6 py-2  text-sm font-semibold  text-white transition-colors duration-200  outline-none cursor-pointer  min-w-[200px] rounded-lg bg-emerald-800 font-titilllium hover:opacity-80'>
-					<span>See more</span>
+					className='px-6  min-w-[160px]  py-2 font-bold bg-brand text-gray-200 w-fit transition-all shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]   md:px-8  text-[16px] md:text-sm  font-titilllium  duration-200  outline-none cursor-pointer    items-center justify-center  flex'>
+					<span className='mx-auto'>See more</span>
 				</Link>
 			</div>
 		</section>

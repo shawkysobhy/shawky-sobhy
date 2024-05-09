@@ -10,7 +10,7 @@ function Heading() {
 						<span className='text-brand'> . </span>
 					</h1>
 				</div>
-				<div className='relative overflow-hidden text-white w-fit'>
+				<div className='relative p-4 overflow-hidden text-white w-fit'>
 					<h2 className='text-lg mt-[1.6rem] font-extralight'>
 						I&apos;m a <span className='font-bold text-brand'>{POSITION}</span>
 					</h2>
@@ -19,8 +19,8 @@ function Heading() {
 					</p>
 					<a
 						href='#contact'
-						className=' inline-block z-20 border-mintgreen  bg-brand rounded-md text-backgroundLight font-medium py-[1rem] px-[2.4rem] transition-opacity duration-200 hover:opacity-70 text-sm'>
-						Contact Me
+						className=' inline-block py-[1rem] px-[2.4rem] font-medium bg-brand text-white w-fit transition-all shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]'>
+						Contact me
 					</a>
 				</div>
 			</div>

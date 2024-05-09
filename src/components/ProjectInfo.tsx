@@ -6,7 +6,7 @@ function ProjectInfo({ project }:{project:Project}) {
 	const { title, description, img, links } = project;
 	return (
 		<div className='max-w-[700px] w-full  rounded-[1.2rem] overflow-hidden bg-backgroundLight text-white'>
-			<img className='w-full aspect-video' src={img} />
+			<img className='max-w-[700px] w-full aspect-video' src={img} />
 			<div className='p-[2.4rem]'>
 				<h4 className='py-4 text-lg font-bold'>{title}</h4>
 				<div className='pb-6'>

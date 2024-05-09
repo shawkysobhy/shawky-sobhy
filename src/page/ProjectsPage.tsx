@@ -9,6 +9,7 @@ import Contact from '../layout/Contact';
 import Filter from '../components/Filter';
 import { Project, TechStack, tech } from '../models';
 import { Link } from 'react-router-dom';
+import { GrReturn } from 'react-icons/gr';
 function ProjectsPage() {
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0);
@@ -34,7 +35,7 @@ function ProjectsPage() {
 					</h3>
 					<div className='flex items-center space-x-4'>
 						<Link to='/'>
-							<BsArrowLeftSquareFill className='w-12 h-12 cursor-pointer text-emerald-300 hover:text-emerald-600' />
+							<BsArrowLeftSquareFill className='w-12 h-12 text-indigo-300 cursor-pointer hover:text-indigo-600' />
 						</Link>
 						<Filter
 							filterKeyword={filterKeyword}
@@ -51,9 +52,9 @@ function ProjectsPage() {
 						/>
 					</div>
 				</div>
-				<div className='px-10 py-8 my-20 border-r-4 border-orange-600 rounded-md bg-darkGray'>
+				<div className='px-10 py-8 my-20 border-r-4 border-indigo-300 rounded-md bg-darkGray'>
 					<p className='leading-loose text-textGray font-titilllium'>
-						<SiHey className='w-12 h-12 text-orange-600' /> {Note_Project}
+						<SiHey className='w-12 h-12 text-indigo-300' /> {Note_Project}
 					</p>
 				</div>
 				<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16'>
@@ -61,6 +62,13 @@ function ProjectsPage() {
 						<ProjectCard key={project.title} project={project} />
 					))}
 				</div>
+			</div>
+			<div className='flex items-center justify-center'>
+				<Link
+					to='/'
+					className=' flex items-center justify-center font-bold py-[1rem] px-[2.4rem]  bg-brand text-white w-fit transition-all shadow-[3px_3px_0px_white] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]'>
+					<GrReturn className='text-lg' /> <p>Go to Home</p>
+				</Link>
 			</div>
 			<Contact />
 			<div className='h-[200px] bg-gradient-to-b from-background to-backgroundDark'></div>

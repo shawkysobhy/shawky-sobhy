@@ -27,7 +27,7 @@ function About() {
 				</div>
 				<div>
 					<div className='flex flex-row items-center mb-[24px]'>
-						<HiMiniCommandLine color='#0aff9d' className='w-12 h-12' />
+						<HiMiniCommandLine className='w-12 h-12 text-brand' />
 						<div>
 							<p className='text-[2.2rem] font-bold ml-[.8rem]'>Use at work</p>
 						</div>

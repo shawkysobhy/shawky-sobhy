@@ -28,7 +28,7 @@ function ProjectCard({ project }:{project:any}) {
 			<div>
 				<div className='flex items-center gap-[1.2rem] my-[1.6rem]'>
 					<h4
-						className='font-bold cursor-pointer text-md'
+						className='font-bold cursor-pointer text-md text-indigo-50'
 						onClick={openModalHandler}>
 						{project.title}
 					</h4>
@@ -37,16 +37,18 @@ function ProjectCard({ project }:{project:any}) {
 						href={project.links.src}
 						target='_blank'
 						aria-label='visit project repo on github'>
-						<FaGithub className='w-10 h-10 cursor-pointer text-brand hover:text-emerald-600' />
+						<FaGithub className='w-10 h-10 cursor-pointer text-brand hover:text-indigo-800' />
 					</a>
 					<a
 						href={project.links.live}
 						target='_blank'
 						aria-label='visit project live demo'>
-						<FaChrome className='w-10 h-10 cursor-pointer text-brand hover:text-emerald-600 ' />
+						<FaChrome className='w-10 h-10 cursor-pointer text-brand hover:text-indigo-800 ' />
 					</a>
 				</div>
-				<div className='text-brand '>{project?.tools?.join(' - ')}</div>
+				<div className='text-[#eef2ff] font-bold '>
+					{project?.tools?.join(' - ')}
+				</div>
 				<p className='my-2 leading-relaxed font-extralight'>
 					{project.description.substring(0, 113)}
 					<button
