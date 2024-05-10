@@ -74,3 +74,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
 	background: #a5b4fc;
 }
+.custom-text-shadow{
+	text-shadow: 3px 3px 0 #6366f1; 
+}
