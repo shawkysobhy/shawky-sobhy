@@ -16,6 +16,7 @@ export type TechStack =
 	| 'React Hook Form'
 	| 'React Router'
 	| 'Rapid Api'
+	| 'i18Next'
 	| 'NextAuth';
 
 export const tech: {
@@ -39,6 +40,7 @@ export const tech: {
 	RapidApi: 'Rapid Api',
 	Next: 'Next',
 	NextAuth: 'NextAuth',
+	i18Next: 'i18Next',
 };
 
 export interface Project {

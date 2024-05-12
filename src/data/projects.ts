@@ -1,6 +1,7 @@
 import { Project, tech } from '../models';
 
 enum ProjectIds {
+	WethAir,
 	Trello101,
 	WildHutDashboard,
 	HooBank,
@@ -29,16 +30,24 @@ export const PROJECTS: Project[] = [
 		title: 'Bank Landing Page',
 		description:
 			'A landing page project built with TypeScript, React, and Tailwind CSS. This project showcases various sections and layouts for creating modern and responsive landing pages.',
-		tools: [
-			tech.React,
-			tech.Typescript,
-			tech.Tailwind,
-		],
+		tools: [tech.React, tech.Typescript, tech.Tailwind],
 		links: {
 			src: 'https://github.com/shawkysobhy/hoo-bank-landing-page',
 			live: 'https://hoobank-intro.vercel.app/',
 		},
 		img: 'https://raw.githubusercontent.com/shawkysobhy/hoo-bank-landing-page/main/public/screenshot.png',
+	},
+	{
+		id: ProjectIds.WethAir,
+		title: 'Weth Air',
+		description:
+			'Weather app full of feature from get weather data and populatoin from all the world cities and provide authentication and enable to create account to save and mange your faviourites  and support multi language feature',
+		tools: [tech.React, tech.Javascript, tech.Tailwind, tech.i18Next],
+		links: {
+			src: 'https://github.com/shawkysobhy/WeathAir',
+			live: 'https://github.com/shawkysobhy/WeathAir',
+		},
+		img: 'https://raw.githubusercontent.com/shawkysobhy/WeathAir/main/public/Screenshot.png',
 	},
 	{
 		id: ProjectIds.Trello101,
