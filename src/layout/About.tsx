@@ -6,7 +6,7 @@ function About() {
 	return (
 		<section className='section-wrapper' data-section id='about'>
 			<SectionTitle direction={'row'} title={'About'} />
-			<div className='grid grid-cols-1 md900:grid-cols-[minmax(0,1fr)_300px] gap-[3rem]'>
+			<div className='grid grid-cols-1 md900:grid-cols-[minmax(0,1fr)_300px] gap-[2rem]'>
 				<div className='leading-loose font-extralight'>
 					<p className='mb-10 about'>
 						Hey, I&apos;m Shawky Sobhy. I&apos;m passionate about web and

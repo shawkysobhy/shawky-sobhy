@@ -8,14 +8,16 @@ function CertificateItem({
 	certificateLink,
 }: CertificateItemProps) {
 	return (
-		<li className='flex items-center my-[2rem] gap-3'>
+		<li className=' my-[2rem]'>
 			<a
 				target='_blank'
 				href={certificateLink}
 				aria-label='see certification details'>
-				<p>{certificateName}</p>
+				<p>
+					{certificateName}{' '}
+					<IoLink className='inline-block md:ml-4 text-brand' />
+				</p>
 			</a>
-			<IoLink className='text-brand' />
 		</li>
 	);
 }

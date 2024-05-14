@@ -8,15 +8,19 @@ export const tools = [
 	'JavaScript',
 	'TypeScript',
 	'React',
-	'Redux',
+	'Next',
+	'Redux toolkit',
 	'React Query',
-	'HTML',
-	'CSS',
+	'Tailwind',
+	'Supabase',
 	'Material UI',
 	'Axois',
-	'Tailwind',
+	'HTML',
+	'CSS',
+	'I 18n-next',
 	'Bootstrp',
 	'Figma',
+	'Postman',
 ];
 
 export const Note_Project = `" each task and small project I've tackled represents a step forward in

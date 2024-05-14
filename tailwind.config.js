@@ -12,8 +12,8 @@ export default {
 		},
 		extend: {
 			textShadow: {
-        'custom': '2px 2px 4px rgba(0, 0, 0, 0.5)', // Customize your shadow here
-      },
+				custom: '2px 2px 4px rgba(0, 0, 0, 0.5)', // Customize your shadow here
+			},
 			fontFamily: {
 				note: ['Mali', 'cursive'],
 				titilllium: ['Titillium Web', 'sans-serif'],

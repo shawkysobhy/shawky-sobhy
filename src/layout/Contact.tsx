@@ -23,8 +23,8 @@ function Contact() {
 					</a>
 					if that &apos;s more your speed.
 				</p>
-				<div className='flex items-center gap-4 text-sm font-bold md:text-md'>
-					<IoMdMailOpen /> shawkysobhy98@gmail.com
+				<div className='flex items-center gap-4 text-sm font-bold md:text-md '>
+					<IoMdMailOpen className='text-brand' /> shawkysobhy98@gmail.com
 				</div>
 			</div>
 		</section>

@@ -19,19 +19,15 @@ body {
 }
 @layer components {
 	.section-wrapper {
-		@apply mb-[4.8rem] py-[7.2rem] px-[2.4rem] relative z-10 max-w-[1200px]	md:p-[9.6rem] md:mb-[9.6rem] m-auto overflow-hidden text-white;
+		@apply mb-[4.8rem] py-[7.2rem] px-[2.4rem] relative z-10 max-w-[1250px]	md:p-[9.6rem] md:mb-[9.6rem] m-auto overflow-hidden text-white;
 	}
 	.styled-link {
 		@apply px-8 py-4  text-[16px] font-bold text-white transition-colors duration-200 border outline-none cursor-pointer bg-[#1b4332] border-brand hover:bg-background flex items-center justify-center space-x-4;
 	}
+	.iconContainer {
+		@apply p-3 text-white rounded-full cursor-pointer hover:bg-indigo-800;
+	}
 }
-.iconContainer {
-	cursor: pointer;
-	color: white;
-	transition: color 0.3s ease-in-out;
-}
-
-
 
 .icon-close {
 	width: 100%;
@@ -53,11 +49,11 @@ body {
 
 .filter::-webkit-scrollbar {
 	height: 5px;
-	background-color: #f0f0f0; 
+	background-color: #f0f0f0;
 }
 
 .filter::-webkit-scrollbar-thumb {
-	background-color: #888; 
+	background-color: #888;
 }
 
 ::-webkit-scrollbar {
@@ -74,6 +70,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
 	background: #a5b4fc;
 }
-.custom-text-shadow{
-	text-shadow: 3px 3px 0 #6366f1; 
+.custom-text-shadow {
+	text-shadow: 3px 3px 0 #6366f1;
 }
