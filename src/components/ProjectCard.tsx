@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ProjectInfo, Modal } from './index';
 import { FaChrome } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
-function ProjectCard({ project }:{project:any}) {
+function ProjectCard({ project }: { project: any }) {
 	const [toggle, setToggle] = useState(false);
 	const closeModalHandler = () => {
 		setToggle(false);
@@ -37,13 +37,13 @@ function ProjectCard({ project }:{project:any}) {
 						href={project.links.src}
 						target='_blank'
 						aria-label='visit project repo on github'>
-						<FaGithub className='w-10 h-10 cursor-pointer text-brand hover:text-indigo-800' />
+						<FaGithub className='w-10 h-10 cursor-pointer text-[#c8a9f5] hover:text-brand' />
 					</a>
 					<a
 						href={project.links.live}
 						target='_blank'
 						aria-label='visit project live demo'>
-						<FaChrome className='w-10 h-10 cursor-pointer text-brand hover:text-indigo-800 ' />
+						<FaChrome className='w-10 h-10 cursor-pointer text-[#c8a9f5] hover:text-brand ' />
 					</a>
 				</div>
 				<div className='text-[#eef2ff] font-bold '>
@@ -52,7 +52,7 @@ function ProjectCard({ project }:{project:any}) {
 				<p className='my-2 leading-relaxed font-extralight'>
 					{project.description.substring(0, 113)}
 					<button
-						className='ml-2 font-semibold underline cursor-pointer text-brand'
+						className='ml-2 font-semibold underline cursor-pointer text-[#c8a9f5]'
 						onClick={() => openModalHandler()}>
 						{'more details '}
 					</button>

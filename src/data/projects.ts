@@ -1,10 +1,10 @@
 import { Project, tech } from '../models';
 
 enum ProjectIds {
-	WethAir,
 	Trello101,
 	WildHutDashboard,
 	HooBank,
+	WethAir,
 	PromptStorm,
 	JobMatchMaker,
 	PizzaPulse,

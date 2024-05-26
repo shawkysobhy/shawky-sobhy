@@ -19,7 +19,7 @@ export default {
 				titilllium: ['Titillium Web', 'sans-serif'],
 			},
 			colors: {
-				background: '#000',
+				background: '#000319',
 				brand: '#6366f1',
 				mintgreen: '#6366f1',
 				bgOpaque: 'hsla(0,0%,7%,.25)',
